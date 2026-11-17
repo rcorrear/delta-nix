@@ -57,7 +57,7 @@
           version = release.version;
 
           src = pkgs.fetchurl {
-            url = "https://github.com/zed-industries/delta-nix/releases/download/${release.tag}/${asset.filename}";
+            url = "https://releases.delta.dev/releases/stable/${release.version}/${asset.filename}";
             inherit (asset) hash;
           };
 
